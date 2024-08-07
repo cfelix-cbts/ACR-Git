@@ -25,7 +25,7 @@ RUN apt install terraform
 # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
 ENV TARGETARCH=linux-x64
 
-WORKDIR /usr/bin
+WORKDIR /azp
 
 COPY azure-pipelines-agent/start.sh .
 RUN chmod +x start.sh
